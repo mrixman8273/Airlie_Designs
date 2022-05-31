@@ -1,0 +1,583 @@
+@charset "utf-8";
+/* Global Styles */
+.slide-container{
+	
+	width:1480px;
+	height: 385px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow:hidden;
+	text-align: center;
+}
+.image-container{
+	width: 4440px;
+	height:385px;
+	position: relative;
+	transition: left 2s;
+	-webkit-transition:left 2s;
+	-moz-transition:left 2;
+	-o-transition:left 2s;
+}
+.slider-image{
+	float:left;
+	margin:0px;
+	padding: 0px;
+}
+.button-container{
+	top:-20px;
+	position: relative;
+}
+.slider-button{
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	background-color: white;
+}
+#slider-image-1:target~ .image-container{
+	left: 0px;
+}
+#slider-image-2:target~ .image-container{
+	left: -1480px;
+}
+#slider-image-3:target~ .image-container{
+	left: -2960px;
+}
+a:link{
+	color:white;
+	text-decoration: none;
+}
+a:visited{
+	color:#A1C79B;
+	
+}
+a:hover {
+	color: #FFFF98;
+}
+a:active{
+	color:#00322A;
+}
+
+
+/*header*/
+
+
+.secondary_header {
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: #2D504B;
+    margin: auto;    
+}
+.container .secondary_header ul {
+	margin-top: 0%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+	width: 100%;
+}
+.secondary_header ul li {
+    list-style: none;
+    float: left;
+    margin-right: auto;
+    margin-top: 0px;
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    margin-left: auto;
+    text-align: center;
+    width: 21%;
+    transition: all 0.3s linear;
+    text-decoration: none;
+}
+
+
+
+
+/* Logo placeholder*/
+#logo {
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 139px;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	background-color: rgba(190,190,190,1.00);
+}
+/* div for Links in header */
+#headerLinks {
+    float: left;
+    width: calc( 100% - 139px );
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(255,255,255,1.00);
+    text-decoration: none;
+}
+/* Links in header */
+#headerLinks a {
+	text-decoration: none;
+	color: rgba(146,146,146,1.00);
+	padding-left: 66px;
+	font-size: 14px;
+}
+/* Offer text banner*/
+#offer {
+    font-family: 'Montserrat', sans-serif;
+    clear: both;
+    background-color: rgba(161,199,155,1.00);
+    color: rgba(146,146,146,1.00);
+    padding-left: 115px;
+    padding-top: 57px;
+    padding-bottom: 67px;
+    padding-right: 2px;
+    height: 0%;
+}
+h1 {
+    color: #00322A;
+    font-size: 45px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-family: giddyup-std;
+}
+/* Main content of the site */
+#content {
+	clear: both;
+	overflow: auto;
+	padding-top: 29px;
+	
+}
+.floatleft{
+    float: left;
+    margin-top: -31px; 
+}
+/* Sidebar */
+
+/* main content of the site */
+#content .mainContent {
+	margin: auto;
+	width: 70%;
+	text-align: center;
+	padding-left: 4%;
+	
+}
+/*menubar's properties for menus in sidebar */
+
+/* Whole page content */
+#mainWrapper {
+	width: 80%;
+	padding-left: 10%;
+}
+/*menu elements */
+
+/* Product rows for catalog */
+#content .mainContent .productRow {
+	overflow: auto;
+	color: rgba(146,146,146,1.00);
+}
+/* Each product Information in the catalog */
+.mainContent .productRow .productInfo {
+	float: left;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 22%;
+}
+/* Prices of a products in catalog */
+.productRow .productInfo .price {
+    font-family: 'Montserrat', sans-serif;
+    color: #1A7B5c;
+    background-color: #a1c79b;
+    font-size: 22px;
+    position: relative;
+    top: -20px;
+    margin-bottom: 9px;
+}
+.productRow .productInfo .productContent {
+    font-family: 'Montserrat', sans-serif;
+    color: #1A7B5c;
+    background-color: #a1c79b;
+    font-size: 16px;
+    position: relative;
+    top: -37px;
+    margin-bottom: 9px;
+}
+
+/* footer */
+#mainWrapper footer {
+	clear: both;
+	overflow: auto;
+	background-color: rgba(208,207,207,1.00);
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	padding-top: 22px;
+	padding-left: 22px;
+	text-align: center;
+	padding-bottom: 22px;
+	padding-right: 22px;
+}
+/*Each footer content */
+#mainWrapper footer div {
+	width: 27%;
+	float: left;
+	padding-left: 4%;
+	padding-right: 2%;
+	color: rgba(255,255,255,1.00);
+	text-align: justify;
+}
+/* Links in footer */
+footer div a {
+	color: rgba(146,146,146,1.00);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+/* Product's images in catalog */
+.productInfo div img {
+	width: 100%;
+}
+
+/* Container for links in footer */
+footer .footerlinks {
+	margin-top: -15px;
+}
+body {
+    background-color: #A1C79B;   
+}
+
+h1 {
+    font-family: giddyup-std, sans-serif;
+    font-size: 77px;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 11px 12px 22px #08352E;
+}
+main {
+    background-image: url(../images/leaves.png);
+}
+aside {
+    background-color: #2C504B;
+    float: left;
+    width: 170px;
+    height: 1000px;
+    color: #FFFF98;
+    font-size: 20px;
+	font-family: ltc-bodoni-175, serif;
+}
+h5 {
+    text-align: center;
+    color: #FFFFFF;
+}
+/* Media query for tablets */
+@media screen and (max-width:700px) {
+/* search field in sidebar */
+#content .sidebar #search {
+    display: none;
+    clear: none;
+}
+
+/*The sidebar and maincontent of page */
+
+
+/* Unordered List of links */
+#menubar .menu ul {
+	display: inline;
+}
+/*list elements */
+#menubar .menu ul li {
+	display: inline;
+	font-size: medium;
+	padding-left: 0%;
+	padding-right: 3%;
+}
+/*The link to be hidden in tablet view */
+.sidebar #menubar .menu ul .notimp {
+	display: none;
+}
+/* menus in sidebar */
+.sidebar #menubar .menu {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 16px;
+}
+/*menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -7%;
+	overflow: hidden;
+	width: 95%;
+	padding-top: 0px;
+}
+/* offer banners content */
+#mainWrapper #offer p {
+	font-size: small;
+}
+/* main content region of page */
+#mainWrapper #content .mainContent {
+	overflow: hidden;
+	width: 95%;
+	margin-top: 40px;
+}
+/* Prices of products in catalog view */
+.productRow .productInfo .price {
+	font-size: 19px;
+	
+}
+/* Content holders in catalog view */
+.productRow .productInfo .productContent {
+	font-size: 16px;
+}
+/* Container for links in footer */
+#mainWrapper footer .footerlinks {
+	float: none;
+	width: 100%;
+	position: relative;
+	top: 17px;
+	clear: both;
+	text-align: center;
+	left: 0%;
+	padding-bottom: 19px;
+}
+/* Container for each footer divisions */
+#mainWrapper footer div {
+	width: 44%;
+	text-align: justify;
+	font-size: 15px;
+}
+/* Links in footer */
+.footerlinks p a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	display: inline;
+	padding-right: 35px;
+}
+/* Footer region */
+#mainWrapper footer {
+	padding-left: 16px;
+	overflow: hidden;
+}
+/* Links in header */
+header #headerLinks a {
+	padding-left: 0px;
+	padding-right: 30px;
+}
+/* Offer- Text banner */
+#mainWrapper #offer {
+	padding-left: 22%;
+}
+/* Paragraphs in footer */
+footer .footerlinks p {
+	display: inline;
+}
+}
+
+/*media query for small screen devices */
+@media screen and (max-width:480px) {
+
+/* Logo placeholder*/
+#mainWrapper header #logo {
+	width: 100%;
+	text-align: center;
+}
+
+/*Offer - Text Banner */
+#mainWrapper #offer {
+	padding-left: 0px;
+	text-align: center;
+}
+
+/*Menu headings in sidebar */
+#menubar .menu h2 {
+	width: 100%;
+	display: block;
+}
+/* Each product in catalog view */
+.mainContent .productRow .productInfo {
+	width: 100%;
+	display: block;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	left: -2%;
+}
+#mainWrapper footer div {
+	width: 100%;
+	margin-left: -16px;
+	text-align: justify;
+	padding-bottom: 16px;
+	overflow: auto;
+}
+/* Unordered list for menu elements */
+.menu ul {
+	position: relative;
+	padding-left: 24%;
+}
+/* Container for links in footer */
+#mainWrapper footer .footerlinks {
+	padding-left: 8%;
+}
+/* Main content which excludes the sidebar */
+#mainwrapper #content .mainContent {
+	margin-top: -81px;
+	text-align: center;
+	width: 100%;
+	padding-left: 0px;
+}
+}
+
+@media screen and (max-width:992px){
+	.secondary_header ul li {
+		width: 18%;
+	}
+}
+@media screen and (max-width:768px){
+	.secondary_header ul li {
+		width: 18%;
+	}
+}
+@media screen and (max-width:480px){
+		.secondary_header ul li {
+		display: list-item;
+			list-style-type: none;
+			float: none;
+			margin: 0px 0px 20px 0px;
+			width: 160px;
+			text-align: center;
+	}
+	.secondary_header {
+   
+		width: 240px;
+}
+	.floatleft{
+    float: left;
+    margin-top: -21px; 
+		margin-left: 35px;
+}
+	aside {
+
+    width: 100px;
+    height: 3500px;
+
+    font-size: 15px;
+
+}
+	
+}
+@media screen and (max-width:700px){
+		.secondary_header ul li {
+		display: list-item;
+			list-style-type: none;
+			float: none;
+			margin: 0px 0px 20px 0px;
+			width: 160px;
+			text-align: center;
+	}
+	.secondary_header {
+   
+		width: 240px;
+}
+	.floatleft{
+    float: left;
+    margin-top: -21px; 
+		margin-left: 35px;
+}
+}
+@media screen and (max-width:320px){
+		.secondary_header ul li {
+		display: list-item;
+			list-style-type: none;
+			float: none;
+			margin: 0px 0px 20px 0px;
+			width: 160px;
+			text-align: center;
+	}
+	.secondary_header {
+   
+		width: 240px;
+}
+		.floatleft{
+    
+		  float: left;
+    margin-top: -21px; 
+		margin-left: 42px;
+}
+	aside {
+   
+    width: 100px;
+    height: 2400px;
+    
+    font-size: 15px;
+	
+}
+}
+
+	@media (min-width: 768px) {
+  .container2 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container2 {
+    max-width: 960px;
+  }
+}
+	
+
+
+
+.container2{
+ width: 50%;
+ height: 100%;
+ background-color: #2D504B;
+ border-radius: 20px;
+	margin-top: 0%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+
+h3 {
+    color: #FFFF98;
+    font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    float: none;
+    text-align: center;
+}
+h6 {
+    color: #FFFF98;
+    font-family: ltc-bodoni-175, serif;
+    text-align: center;	
+}
+p{
+	text-align-last: center;
+}
+.form-control {
+    display: block;
+    width: 80%;
+    height: calc(0.5em + 0.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: -1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin: auto;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
